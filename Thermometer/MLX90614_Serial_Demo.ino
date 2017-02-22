@@ -53,10 +53,12 @@ void loop()
     // Use the object() and ambient() functions to grab the object and ambient
 	// temperatures.
 	// They'll be floats, calculated out to the unit you set with setUnit().
-    Serial.print("Object: " + String(therm.object(), 2));
+    Serial.print("Object: ");
+    Serial.println(therm.object());
     Serial.write('°'); // Degree Symbol
     Serial.println("F");
-    Serial.print("Ambient: " + String(therm.ambient(), 2));
+    Serial.print("Ambient: ");
+    Serial.println(therm.ambient());
     Serial.write('°'); // Degree Symbol
     Serial.println("F");
     Serial.println();
